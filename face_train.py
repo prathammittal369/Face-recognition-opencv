@@ -39,8 +39,8 @@ labels = np.array(labels)
 
 face_train = cv.face.LBPHFaceRecognizer_create()
 face_train.train(features,labels)
-face_train.save("Face Recognizer_Het.yml")
+face_train.save("Face Recognizer.yml")
 
-np.save("Features_Het.npy",features)
-np.save("Labels_Het.npy",labels)
+np.save("Features.npy",features)
+np.save("Labels.npy",labels)
 print(labels)
